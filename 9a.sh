@@ -8,7 +8,7 @@ then
 		
 			head -n $3 $1 | tail -n +$2
 		else
-			echo "Enter valid file"
+			echo "Enter the proper numbers for the selection"
 		fi
 
 	else
