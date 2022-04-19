@@ -1,9 +1,14 @@
-for i in `ls`
-do
-fl=`expr length $i`
-if [ $fl -ge 10 ]
+if [ $# -ne 0 ]
 then
-echo $i
+	#if [ -d "/Home/mydir" ]
+	#then
+		find $HOME -name "$1" -print
+		cat $1
+		cp -f $1 $Home/mydir/$1
+	#else
+		#echo "Does not exits"
+	#fi
+else
+	echo "Enter the proper arguments"
 fi
-done
 
