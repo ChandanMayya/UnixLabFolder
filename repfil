@@ -1,0 +1,14 @@
+Write an awkscript that 
+accepts date argument in 
+ the form of dd-mm-yy and display it in
+the form month, day and year.
+ The script should check the validity
+    of the argument and in the
+ case of error, 
+ display a suitable message.
+Write an awkscript that 
+ to delete duplicated line
+  from a text file.
+  The order of 
+ The order of  the original lines
+ must remain unchanged.
