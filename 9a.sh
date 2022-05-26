@@ -17,6 +17,3 @@ then
 else
 	echo "Usage: FileName Starting Line EndingLine"
 fi
- 
-	
-
