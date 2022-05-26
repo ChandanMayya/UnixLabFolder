@@ -31,4 +31,3 @@ then
 else
 	echo "Enter proper parameters"
 fi
-
