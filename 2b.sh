@@ -1,15 +1,12 @@
-if [ -e $1 ]
+if [ $# -eq 1 ]
 then
-	name=$1
-	echo $name
-        set -- `who`
-	while(1)
-	do
-		if (name = $1)
-			cd home/$1
-		else
-			shift(5)
-			exit
-		fi
-	done
-fi	
+	grep $1 /etc/passwd > file
+	if [ $? -eq 0 ]
+	then
+		echo "Home directory of $1 is `cut -d ":" -f 6 file`"
+	else
+		echo "User does not exist"
+	fi
+else
+	echo "Please give username"
+fi
