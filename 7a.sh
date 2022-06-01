@@ -1,17 +1,7 @@
-set -- `who`
-t=$4
-u=`whoami`
-for i in $*
-do
-	if [ $u != $1 ]
-	then 
-		`shift 5`
-	else
-		t=$4
-		
-	fi
-done
-set -- `echo $t | tr ":" " "`
+usr=`whoami`
+set -- `who | grep $usr`
+set -- `echo $4 | tr ":" " "`
+
 h=$1
 if [ $h -ge 4 ] && [ $h -lt 12 ]
 then
